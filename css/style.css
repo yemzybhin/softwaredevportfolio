@@ -1310,7 +1310,7 @@ a:focus {
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
+    background: url(../img/contact.png) left center no-repeat;
     background-size: contain;
 }
 
@@ -1513,7 +1513,7 @@ a:focus {
 
 .footer .footer-social {
     position: relative;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .footer .footer-social a {
