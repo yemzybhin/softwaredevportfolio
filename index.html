@@ -26,7 +26,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css?v=2" rel="stylesheet" />
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -431,65 +431,248 @@
     <!-- Experience End -->
 
     <!-- Portfolio Start -->
-    <div
-      id="portfolio"
-      style="
-        padding: 80px 0;
-        background-color: #fff;
-        font-family: &quot;Montserrat&quot;, sans-serif;
-      "
-    >
-      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-        <p>My Portfolio</p>
-        <h2>My Mobile Portfolio</h2>
-      </div>
+    <div class="portfolio" id="portfolio" style="padding: 80px 0; background-color: #f8f9fa;">
+      <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+          <p>My Portfolio</p>
+          <h2>Featured Projects</h2>
+        </div>
 
-      <div id="portfolio-container"></div>
+        <!-- Portfolio Filter -->
+        <div class="row">
+          <div class="col-12">
+            <ul id="portfolio-filter" style="margin-bottom: 40px;">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-solo">Solo Projects</li>
+              <li data-filter=".filter-team">Team Projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="row portfolio-container">
+          <!-- SootheMe -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-team wow fadeInUp" data-wow-delay="0.0s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/Frame%202_UvJC8jQEi.jpg" alt="SootheMe" class="project-image">
+              <span class="project-badge badge-team">Lead Developer</span>
+              <h3 class="project-title">SootheMe App</h3>
+              <div class="project-meta">Lead Developer (Mobile & Backend) | AI Matchmaking</div>
+              <p class="project-desc">
+                An innovative, AI-powered matchmaking mobile application connecting users based on personality compatibility and conversational sentiment.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Directed the complete mobile and backend engineering lifecycle from concept to app store deployment.</li>
+                <li>Integrated AI sentiment analysis models to dynamically evaluate user interactions and compatibility.</li>
+                <li>Engineered real-time chat and matchmaking algorithms optimizing for low-latency connections.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <a href="https://apps.apple.com/gb/app/sootheme/id6752302365" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <!-- LukuLuku -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-solo wow fadeInUp" data-wow-delay="0.1s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/Lukuluku_o1nehpTDd.jpg" alt="LukuLuku" class="project-image">
+              <span class="project-badge badge-solo">Solo Project</span>
+              <h3 class="project-title">LukuLuku</h3>
+              <div class="project-meta">Solo Client Project | Movie Streaming App</div>
+              <p class="project-desc">
+                A robust movie streaming application offering seamless playback and personalized content discovery.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Engineered a high-performance video streaming backend capable of handling multiple concurrent requests.</li>
+                <li>Implemented advanced search and recommendation engines leveraging pgvector for similarity matching.</li>
+                <li>Designed an intuitive cross-platform mobile interface for uninterrupted streaming experiences.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">pgvector</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <a href="https://nexus-lab-place.onrender.com/demos/lukuluku/slider_main_1.html" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <!-- Property Pro -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-solo wow fadeInUp" data-wow-delay="0.2s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/Property%20Pro_eWUS-_N6j.jpg" alt="Property Pro" class="project-image">
+              <span class="project-badge badge-solo">Solo Project</span>
+              <h3 class="project-title">Property Pro</h3>
+              <div class="project-meta">Solo Client Project | Real Estate App</div>
+              <p class="project-desc">
+                A comprehensive real estate platform empowering users to discover, evaluate, and acquire properties efficiently.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Developed a scalable backend architecture processing complex property datasets and user queries.</li>
+                <li>Built an immersive and responsive mobile client enabling interactive property tours and listings.</li>
+                <li>Integrated location-based vector searches using pgvector for highly accurate geographic property discovery.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">pgvector</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <a href="https://nexus-lab-place.onrender.com/demos/lukuluku/slider_main_1.html" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <!-- AllPros -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-solo wow fadeInUp" data-wow-delay="0.3s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/allPros_kHl6zIUFq_.jpg" alt="AllPros" class="project-image">
+              <span class="project-badge badge-solo">Solo Project</span>
+              <h3 class="project-title">AllPros</h3>
+              <div class="project-meta">Solo Client Project | Artisans & Professionals Service</div>
+              <p class="project-desc">
+                A dynamic service marketplace connecting clients with vetted artisans and professional service providers.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Architected a scalable microservices backend managing service requests, provider matching, and scheduling.</li>
+                <li>Built a fast, native-feeling mobile app prioritizing seamless onboarding and interactive booking flows.</li>
+                <li>Engineered real-time notification systems and geospatial queries for matching nearby professionals.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <a href="https://nexus-lab-place.onrender.com/demos/stitch_allpros_splash_screen/slider2.html" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <!-- SootheMe Web -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-team wow fadeInUp" data-wow-delay="0.4s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/man_qdoF5bLmM.jpg" alt="SootheMe Web" class="project-image">
+              <span class="project-badge badge-team">Lead Developer</span>
+              <h3 class="project-title">SootheMe Web</h3>
+              <div class="project-meta">Lead Developer (Web & Backend) | AI Matchmaking</div>
+              <p class="project-desc">
+                The web-based counterpart to the SootheMe ecosystem, providing users with a rich, browser-accessible matchmaking experience.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Architected a responsive, server-side rendered web application for optimal SEO and fast load times.</li>
+                <li>Developed seamless cross-platform synchronization ensuring real-time data consistency across web and mobile.</li>
+                <li>Built secure API gateways and robust session management for safe web-based interactions.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <a href="https://www.soothemeapp.com/" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <!-- AdQuizzer -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-team wow fadeInUp" data-wow-delay="0.5s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/Frame%203%20(2)_Op5DDX8Ps.jpg" alt="AdQuizzer" class="project-image">
+              <span class="project-badge badge-team">Lead Developer</span>
+              <h3 class="project-title">AdQuizzer</h3>
+              <div class="project-meta">Lead Developer (Mobile & Backend) | Fintech App</div>
+              <p class="project-desc">
+                A fintech user-engagement platform bridging advertisers and consumers through monetized, interactive ad campaigns.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Built a secure digital wallet and transaction ledger system facilitating direct monetary payouts.</li>
+                <li>Integrated multiple payment gateways and automated disbursement algorithms ensuring financial accuracy.</li>
+                <li>Led the development of cross-platform native features focusing on high-performance interactive surveys.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=com.adeyemi.adquizzer&hl=en" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+                  <!-- CareSync Hub -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-team wow fadeInUp" data-wow-delay="0.6s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/portfolio-01_nHekZZgXe.jpg?updatedAt=1759690497030" alt="CareSync Hub" class="project-image">
+              <span class="project-badge badge-team">Team Project</span>
+              <h3 class="project-title">CareSync Hub</h3>
+              <div class="project-meta">Lead Fullstack Developer | 2024 - Present</div>
+              <p class="project-desc">
+                An enterprise-grade healthcare platform designed to streamline patient health records management, physician scheduling workflows, and real-time medical teleconsultations.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Designed HIPAA-compliant data pipelines and encrypted medical document storage on AWS.</li>
+                <li>Led a development team to design, build, and deploy the cross-platform Flutter app.</li>
+                <li>Integrated secure video-consultation modules using WebRTC and real-time Socket.io signaling.</li>
+                <li>Built a robust role-based access control (RBAC) system for clinics, medical staff, and patients.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">WebRTC</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">CI/CD</span>
+              </div>
+              <a href="#" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <!-- Scapu Flutter -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-solo wow fadeInUp" data-wow-delay="0.7s">
+            <div class="project-card">
+              <img src="https://ik.imagekit.io/qp1uarozx/ghfuheu_sCAHp4qkI.jpg?updatedAt=1752346567848" alt="Scapu Flutter" class="project-image">
+              <span class="project-badge badge-solo">Solo Project</span>
+              <h3 class="project-title">Scapu</h3>
+              <div class="project-meta">Senior Mobile Engineer | 2025</div>
+              <p class="project-desc">
+                Developed the initial native Kotlin app for Scapu, enabling rapid feature verification, product-market-fit validation, and early-stage user acquisition.
+              </p>
+              <div class="project-highlights-title">Key Highlights:</div>
+              <ul class="project-highlights">
+                <li>Coded the mobile application single-handedly from empty repository to App Store/Play Store launch.</li>
+                <li>Created custom scroll views and gestures supporting smooth image, text, and vote card components.</li>
+                <li>Configured low-latency content updates and search indexation utilizing Algolia.</li>
+                <li>Scaled the application smoothly to support over 3,000 active users in the initial phase.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Firebase Firestore</span>
+                <span class="tech-tag">Cloud Functions</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Algolia Search</span>
+              </div>
+              <a href="#" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
     <!-- Portfolio End -->
-
-    <!-- Portfolio Script -->
-    <!-- Portfolio Script -->
-    <script>
-      const imageUrls = [
-        "https://ik.imagekit.io/qp1uarozx/portfolio-01_nHekZZgXe.jpg?updatedAt=1759690497030",
-        "https://ik.imagekit.io/qp1uarozx/portfolio-02-02_2H6_q4dy8.jpg?updatedAt=1759692360686",
-        "https://ik.imagekit.io/qp1uarozx/hefuwnm_bjyOGIHUe.jpg?updatedAt=1752346568695",
-        "https://ik.imagekit.io/qp1uarozx/ghfuheu_sCAHp4qkI.jpg?updatedAt=1752346567848",
-        "https://ik.imagekit.io/qp1uarozx/iuhfuebnfk_11pymvzY1.jpg?updatedAt=1752346568329",
-        "https://ik.imagekit.io/qp1uarozx/Untitled-1-02-1_MAOXyat7q.jpg?updatedAt=1759690500319",
-        "https://ik.imagekit.io/qp1uarozx/Untitled-1-01_IvnOA7utf.jpg?updatedAt=1759692359775",
-        // Add more URLs as needed
-      ];
-
-      const container = document.getElementById("portfolio-container");
-      container.style.display = "flex";
-      container.style.flexWrap = "wrap";
-      container.style.margin = "0";
-      container.style.padding = "0";
-
-      imageUrls.forEach((url) => {
-        const wrapper = document.createElement("div");
-        wrapper.style.position = "relative";
-        wrapper.style.flex = "1 1 100%"; // full width on small screens
-        wrapper.style.margin = "0";
-        wrapper.style.padding = "0";
-        wrapper.style.lineHeight = "0"; // remove spacing caused by inline images
-
-        const img = document.createElement("img");
-        img.src = url;
-        img.alt = "Portfolio App";
-        img.style.width = "100%";
-        img.style.height = "auto";
-        img.style.display = "block"; // removes gaps below images
-        img.style.margin = "0";
-        img.style.padding = "0";
-        img.style.objectFit = "cover"; // ensure it fills without stretching
-
-        wrapper.appendChild(img);
-        container.appendChild(wrapper);
-      });
-    </script>
 
     <!-- Contact Start -->
 

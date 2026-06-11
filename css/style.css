@@ -910,6 +910,147 @@ a:focus {
     border-color: #EF233C;
 }
 
+.portfolio .portfolio-item {
+    margin-bottom: 40px;
+}
+
+.portfolio .project-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 30px);
+}
+
+.portfolio .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(239, 35, 60, 0.12);
+    border-color: rgba(239, 35, 60, 0.25);
+}
+
+.portfolio .project-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+
+.portfolio .badge-solo {
+    background-color: rgba(239, 35, 60, 0.1);
+    color: #EF233C;
+}
+
+.portfolio .badge-team {
+    background-color: rgba(65, 65, 65, 0.1);
+    color: #414141;
+}
+
+.portfolio .project-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 5px;
+}
+
+.portfolio .project-meta {
+    font-size: 13px;
+    color: #797979;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.portfolio .project-desc {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.portfolio .project-highlights-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #414141;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.portfolio .project-highlights {
+    padding-left: 18px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #666666;
+    list-style-type: disc;
+}
+
+.portfolio .project-highlights li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.portfolio .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+}
+
+.portfolio .tech-tag {
+    font-size: 11px;
+    font-weight: 600;
+    background: #f1f2f6;
+    color: #555555;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio .project-card:hover .tech-tag {
+    background: rgba(239, 35, 60, 0.05);
+    color: #EF233C;
+    border-color: rgba(239, 35, 60, 0.1);
+}
+
+.portfolio .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.portfolio .project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #EF233C;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio .project-link:hover {
+    background: #414141;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 /*******************************/
 /********* Banner CSS **********/
